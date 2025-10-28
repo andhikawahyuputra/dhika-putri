@@ -333,22 +333,22 @@
         <div class="slider col-6 mt-3" reverse="true" style="--width: 180px; --height: 250px; --quantity: 6">
           <div class="list">
             <div class="item" style="--position: 1">
-              <a href="img/gallery/1.jpg" data-toggle="lightbox" data-caption="Dhika & Putri 1" data-gallery="mygallery"><img src="img/gallery/1.jpg" alt="" /></a>
+              <a href="img/gallery/1.JPG" data-toggle="lightbox" data-caption="Dhika & Putri 1" data-gallery="mygallery"><img src="img/gallery/1.JPG" alt="" /></a>
             </div>
             <div class="item" style="--position: 2">
-              <a href="img/gallery/2.jpg" data-toggle="lightbox" data-caption="Dhika & Putri 2" data-gallery="mygallery"><img src="img/gallery/2.jpg" alt="" /></a>
+              <a href="img/gallery/2.JPG" data-toggle="lightbox" data-caption="Dhika & Putri 2" data-gallery="mygallery"><img src="img/gallery/2.JPG" alt="" /></a>
             </div>
             <div class="item" style="--position: 3">
-              <a href="img/gallery/3.jpg" data-toggle="lightbox" data-caption="Dhika & Putri 3" data-gallery="mygallery"><img src="img/gallery/3.jpg" alt="" /></a>
+              <a href="img/gallery/3.JPG" data-toggle="lightbox" data-caption="Dhika & Putri 3" data-gallery="mygallery"><img src="img/gallery/3.JPG" alt="" /></a>
             </div>
             <div class="item" style="--position: 4">
-              <a href="img/gallery/4.jpg" data-toggle="lightbox" data-caption="Dhika & Putri 4" data-gallery="mygallery"><img src="img/gallery/4.jpg" alt="" /></a>
+              <a href="img/gallery/4.JPG" data-toggle="lightbox" data-caption="Dhika & Putri 4" data-gallery="mygallery"><img src="img/gallery/4.JPG" alt="" /></a>
             </div>
             <div class="item" style="--position: 5">
-              <a href="img/gallery/5.jpg" data-toggle="lightbox" data-caption="Dhika & Putri 5" data-gallery="mygallery"><img src="img/gallery/5.jpg" alt="" /></a>
+              <a href="img/gallery/5.JPG" data-toggle="lightbox" data-caption="Dhika & Putri 5" data-gallery="mygallery"><img src="img/gallery/5.JPG" alt="" /></a>
             </div>
             <div class="item" style="--position: 6">
-              <a href="img/gallery/6.jpg" data-toggle="lightbox" data-caption="Dhika & Putri 6" data-gallery="mygallery"><img src="img/gallery/6.jpg" alt="" /></a>
+              <a href="img/gallery/6.JPG" data-toggle="lightbox" data-caption="Dhika & Putri 6" data-gallery="mygallery"><img src="img/gallery/6.JPG" alt="" /></a>
             </div>
           </div>
         </div>
@@ -548,21 +548,23 @@
       var ticks = Math.max(200, 500 * (timeLeft / duration));
       skew = Math.max(0.8, skew - 0.001);
 
-      confetti({
-        particleCount: 1,
-        startVelocity: 0,
-        ticks: ticks,
-        origin: {
-          x: Math.random(),
-          // since particles fall down, skew start toward the top
-          y: (Math.random() * skew) - 0.2
-        },
-        colors: ['#FFC38B'],
-        shapes: ['circle'],
-        gravity: randomInRange(0.4, 0.6),
-        scalar: randomInRange(0.4, 1),
-        drift: randomInRange(-0.4, 0.4)
-      });
+      if (Math.random() < 0.1) {
+        confetti({
+          particleCount: 1,
+          startVelocity: 0,
+          ticks: ticks,
+          origin: {
+            x: Math.random(),
+            // since particles fall down, skew start toward the top
+            y: (Math.random() * skew) - 0.2
+          },
+          colors: ['#FFC38B'],
+          shapes: ['circle'],
+          gravity: randomInRange(0.1, 0.3),
+          scalar: randomInRange(0.4, 1),
+          drift: randomInRange(-0.4, 0.4)
+        });
+      }
 
       if (timeLeft > 0) {
         requestAnimationFrame(frame);
