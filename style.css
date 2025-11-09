@@ -95,7 +95,8 @@ body {
 .hero h4 span {
   color: var(--combo1);
   font-size: 1.7rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
 }
 
 .hero a {
@@ -425,7 +426,7 @@ body {
   bottom: 0;
   position: absolute;
   width: 2px;
-  background-color: var(--combo2);
+  background-color: var(--combo3);
   left: 50%;
 }
 
@@ -466,7 +467,7 @@ body {
   border-radius: 8px;
   background-color: var(--combo3);
   transform: translateX(-10px);
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .timeline li .timeline-panel::before {
@@ -902,14 +903,14 @@ footer li {
   }
 
   .timeline::before {
-    left: 50px;
+    left: 45px;
   }
 
   .timeline li .timeline-image {
     width: 140px;
     height: 140px;
     left: 20px;
-    margin-left: 30px;
+    margin-left: 25px;
     top: 16px;
   }
 
@@ -973,6 +974,7 @@ footer li {
   .timeline li .timeline-image {
     width: 100px;
     height: 100px;
+    box-shadow: var(--shadow);
   }
 
   .timeline li .timeline-panel {
