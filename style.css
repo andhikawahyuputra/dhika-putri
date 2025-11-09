@@ -460,12 +460,13 @@ body {
 .timeline li .timeline-panel {
   width: 40%;
   float: left;
-  border: 1px solid var(--combo2);
+  border: 1px solid var(--combo3);
   padding: 2rem;
   position: relative;
   border-radius: 8px;
-  background-color: var(--combo2);
+  background-color: var(--combo3);
   transform: translateX(-10px);
+  margin-right: 1.5rem;
 }
 
 .timeline li .timeline-panel::before {
@@ -473,8 +474,8 @@ body {
   display: inline-block;
   position: absolute;
   border-top: 15px solid transparent;
-  border-left: 15px solid var(--combo2);
-  border-right: 0 solid var(--combo2);
+  border-left: 15px solid var(--combo3);
+  border-right: 0 solid var(--combo3);
   border-bottom: 15px solid transparent;
   top: 80px;
   right: -15px;
@@ -485,8 +486,8 @@ body {
   position: absolute;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid var(--combo2);
-  border-right: 0 solid var(--combo2);
+  border-left: 14px solid var(--combo3);
+  border-right: 0 solid var(--combo3);
   border-bottom: 14px solid transparent;
   top: 81px;
   right: -13px;
@@ -507,7 +508,7 @@ body {
 .timeline li.timeline-inverted .timeline-panel::after {
   border-left-width: 0;
   border-right-width: 14px;
-  left: -11px;
+  left: -13px;
   right: auto;
 }
 
@@ -901,14 +902,14 @@ footer li {
   }
 
   .timeline::before {
-    left: 60px;
+    left: 50px;
   }
 
   .timeline li .timeline-image {
     width: 140px;
     height: 140px;
     left: 20px;
-    margin-left: 45px;
+    margin-left: 30px;
     top: 16px;
   }
 
