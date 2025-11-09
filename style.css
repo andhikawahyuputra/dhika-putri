@@ -89,8 +89,13 @@ body {
 
 .hero h4 {
   color: var(--combo1);
-  font-size: 1.6rem;
-  margin-top: -1rem;
+  font-size: 1.4rem;
+}
+
+.hero h4 span {
+  color: var(--combo1);
+  font-size: 1.7rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .hero a {

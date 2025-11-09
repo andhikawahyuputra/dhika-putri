@@ -8,7 +8,7 @@
 
   <!-- META TAGS -->
   <meta property="og:title" content="The Wedding of Dhika ❤ Putri">
-  <meta property="og:description" content="Dengan penuh kebahagiaan, kami mengundang Anda untuk merayakan pernikahan kami. Saksikan momen indah ini di Nagari Tanjung Alam pada Senin, 08 Desember 2025 pukul 10.00 WIB - selesai. Informasi lebih lanjut dan konfirmasi kehadiran Anda dapat diakses di website ini.">
+  <meta property="og:description" content="Undangan Pernikahan Dhika ❤ Putri">
   <meta property="og:url" content="https://andhikawahyuputra.github.io/dhika-putri/?n=Semuanya%20dan%20Partner">
   <meta property="og:image" content="https://andhikawahyuputra.github.io/dhika-putri/img/thumbnail/bg.png" />
   <meta property="og:type" content="website">
@@ -884,7 +884,7 @@
   <!-- PENGATURAN NAMA TAMU UNDANGAN DI LINK -->
   <script>
     const urlParams = new URLSearchParams(window.location.search);
-    const nama = urlParams.get('n') || '';
+    const nama = urlParams.get('to') || '';
     const pronoun = urlParams.get('p') || '';
     const namaContainer = document.querySelector('.hero h4 span');
     namaContainer.innerText = `${pronoun} ${nama}`.replace(/ ,$/, '');
